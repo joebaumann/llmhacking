@@ -7,7 +7,7 @@ This repository contains code and data for the paper **"Large Language Model Hac
 
 ## What is LLM Hacking?
 
-**LLM hacking** refers to systematic errors in downstream statistical analyses that occur when using LLM annotations instead of human annotations. These errors include:
+**LLM hacking** refers to wrong scientific conclusions that occur when using imperfect LLM-generated annotations. Errors include:
 - **Type I errors**: Finding statistical significance where none exists in ground truth
 - **Type II errors**: Missing true statistical relationships
 - **Type S errors**: Detecting effects in the opposite direction
