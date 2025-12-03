@@ -1,0 +1,15 @@
+dataset_name: manifestos
+link_to_dataset: https://manifesto-project.wzb.eu/,https://manifesto-project.wzb.eu/down/data/2024a/datasets/MPDataset_MPDS2024a.csv
+data_type: Political Party Manifestos
+data_description: |-
+  Political manifesto sentences from the manifestoproject corpus, 2000 to 2022.
+data_and_task_name: manifestos_issues_detailed
+task_description: |-
+  The task is to classify quasi-sentences in party manifestos according to the manifesto project coding scheme. There are 46 categories in total (56 in the original task, where categories that differed only in stance have been aggregated into their main issues).
+bibtex_identifier: merz2016manifesto,Lehmann2024
+notes: We used all data available for parties since 2001, with English translation and sentence level annotations.
+ground_truth_annotators: Trained country experts (mostly political scientist or political science students and native speakers)
+full_dataset_annotator_agreement: 0.7955
+full_dataset_annotator_agreement_notes: |-
+  Mean Krippendorff's Alpha calculated from available \texttt{testresult} values in the dataset~\citep{Lehmann2024}.
+  The \texttt{testresult} represents Krippendorff's Alpha coder reliability scores from entry tests as given in the coding instructions, comparing individual coder performance to master copies.

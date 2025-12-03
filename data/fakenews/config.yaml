@@ -1,0 +1,15 @@
+dataset_name: fakenews
+link_to_dataset: https://github.com/KaiDMML/FakeNewsNet,https://github.com/jiayingwu19/SheepDog
+data_type: News articles
+data_description: |-
+  News articles that have been fact-checked by PolitiFact or GossipCop.
+data_and_task_name: fakenews
+task_description: |-
+  Labelling news articles as fake or real depending on whether they contain fake claims or not.
+bibtex_identifier: shu2020fakenewsnet,Wu2024SheepDog
+prompts: Wu2024SheepDog
+notes: |-
+  The dataset was originally released by \citet{shu2020fakenewsnet} with ground truth annotations and metadata. \citet{Wu2024SheepDog} subsequently provided the news article contents.
+ground_truth_annotators: Journalists and domain experts
+nr_of_ground_truth_annotators: Not reported.
+nr_of_ground_truth_annotators_per_datapoint: 1

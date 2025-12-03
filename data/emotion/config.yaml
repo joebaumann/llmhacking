@@ -1,0 +1,16 @@
+dataset_name: emotion
+link_to_dataset: https://github.com/google-research/google-research/tree/master/goemotions
+data_type: Reddit comments
+data_description: |-
+  Reddit comments from 2005-2019 selected from subreddits with 10k+ comments, filtered to remove deleted, non-English, and toxic content.
+data_and_task_name: emotion
+task_description: |-
+  Classify the emotion expressed in Reddit comments using 25 emotion categories plus neutral.
+bibtex_identifier: demszky-etal-2020-goemotions
+notes: We only include reddit comments with at least three annotators and where all annotators agree on a single label.
+prompts: demszky-etal-2020-goemotions
+ground_truth_annotators: Native English speakers from India
+nr_of_ground_truth_annotators: 82
+nr_of_ground_truth_annotators_per_datapoint: 3.64
+full_dataset_annotator_agreement: 0.2717
+full_dataset_annotator_agreement_notes: The annotator agreement of 0.272 corresponds to the average Krippendorff's alpha across all 26 emotion categories.

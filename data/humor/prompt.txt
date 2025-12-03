@@ -1,0 +1,1 @@
+"{text}":"Is the above joke humorous to most of the people? You must pick between \"True\" or \"False\" You cannot use any other words except for \"True\" or \"False\"

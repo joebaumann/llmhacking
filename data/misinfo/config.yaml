@@ -1,0 +1,14 @@
+dataset_name: misinfo
+link_to_dataset: https://github.com/skgabriel/mrf-modeling
+data_type: News headlines
+data_description: |-
+  The Misinfo Reaction Frames corpus is an dataset of 25k news headlines to articles that have been factchecked. The articles can be about Covid-19, Cancer or Climate Change.
+data_and_task_name: misinfo
+task_description: |-
+  The annotation task is to predict whether the news article is likely to contain misinformation.
+bibtex_identifier: gabriel-etal-2022-misinfo
+prompts: ziems-etal-2024-large
+ground_truth_annotators: Amazon Mechanical Turk workers (US-based)
+nr_of_ground_truth_annotators: 80
+full_dataset_annotator_agreement_notes: |-
+  \citet{gabriel-etal-2022-misinfo} report a pairwise agreement of 79% and Cohen's Kappa of 0.51 (indicating moderate agreement) for the binary classification of headlines as real news or misinformation. However, since the authors only provide aggregate pairwise agreement statistics rather than the complete annotation matrix or information about which specific annotators labeled which headlines, Krippendorff's Alpha cannot be calculated.

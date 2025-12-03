@@ -1,0 +1,13 @@
+dataset_name: humor
+link_to_dataset: https://github.com/orionw/RedditHumorDetection
+data_type: Reddit posts
+data_description: |-
+  15910 posts from reddit/r/jokes.
+data_and_task_name: humor
+task_description: |-
+  The task is to predict whether the text is funny to a lot of people. The ground truth is operationalized as a binary variable indicating if the post received more than 200 upvotes~\citep{weller-seppi-2019-humor}.
+bibtex_identifier: weller-seppi-2019-humor
+prompts: ziems-etal-2024-large
+notes: On average, each tweet received 2918.39 votes.
+ground_truth_annotators: Reddit users
+full_dataset_annotator_agreement_notes: Since the ground truth is operationalized based on the number of upvotes but the voters are unknown, Krippendorff's Alpha cannot be calculated.

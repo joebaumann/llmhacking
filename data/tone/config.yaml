@@ -1,0 +1,13 @@
+dataset_name: tone
+link_to_dataset: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DZZ0OM
+data_type: Political ads
+data_description: |-
+  The data contains 935 political ads from US Senate Candidates. The data was constructed by~\citet{carlson2017pairwise} (accessed via~\citet{OrnsteinBlasingameTruscott2025}).
+data_and_task_name: tone
+task_description: |-
+  Classifying the tone of a political ad as positive, neutral, or negative.
+notes: |-
+  Ground truth labels were aggregated from a 5-point expert coding scale to a 3-class system. Expert coders originally classified ads on a scale from 1 (positive/promoting) to 5 (attack), considering whether ads promoted a single candidate, contrasted candidates, or attacked candidates. For contrasting ads, coders further distinguished whether they were more promotional, more attacking, or balanced. The 5-point scale was collapsed by mapping scores 1-2 to "positive", score 3 to "neutral", and scores 4-5 to "negative" to create the final tone classification.
+bibtex_identifier: carlson2017pairwise
+prompts: OrnsteinBlasingameTruscott2025
+ground_truth_annotators: Expert coders

@@ -1,0 +1,17 @@
+!munch.Munch
+bibtex_identifier: UniversityofLondonNational_Child_Development_Study2024
+data_and_task_name: essay_narrative
+data_description: 'Essays written by eleven year old cohort members from the National
+  Child Development Study (NCDS) in 1969 with the following instructions: "Imagine
+  you are now 25 years old. Write about the life you are leading, your interests,
+  your home life and your work at the age of 25. (You have 30 minutes to do this)."
+
+  Additionally, they were given a short questionnaire to complete at school about
+  their interests outside school, the school subjects they enjoyed most, and what
+  they thought they were most likely to do when they left secondary school.'
+data_type: Essays
+data_notes: For all tasks in this dataset, we formulated prompts based on the original human annotation guidelines.
+dataset_name: essay
+ground_truth_annotators: Human experts
+link_to_dataset: https://beta.ukdataservice.ac.uk/datacatalogue/studies/study?id=5790
+task_description: Level of narrative structure in the essay.

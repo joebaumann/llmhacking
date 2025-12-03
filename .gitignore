@@ -1,0 +1,4 @@
+data_raw
+.DS_Store
+.Rhistory
+__pycache__/

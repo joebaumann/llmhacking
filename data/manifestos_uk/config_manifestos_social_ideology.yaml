@@ -1,0 +1,16 @@
+dataset_name: manifestos_uk
+link_to_dataset: https://github.com/kbenoit/CSTA-APSR/,https://dataverse.harvard.edu/file.xhtml?fileId=10595729&version=1.0
+data_type: Party Manifestos from the UK
+data_description: |-
+  Sentences from manifestos from UK parties, 1987 to 2010.
+data_and_task_name: manifestos_social_ideology
+task_description: |-
+  Classify sentences as liberal or conservative (for sentences on social policy).
+bibtex_identifier: benoit2016crowd
+notes: We only include data where more than 80% of crowdworkers agree on the sentence being about social policy. And we also only include data where more than 80% of crowdworkers agree on the liberal vs. conservative label. Then, we use the crowd-worker majority-vote as the ground truth. We load the data from~\citep{benoit2016crowd} and~\citep{OrnsteinBlasingameTruscott2025}.
+ground_truth_annotators: Crowd workers from 26 CrowdFlower channels
+nr_of_ground_truth_annotators: 307
+nr_of_ground_truth_annotators_per_datapoint: 4.98
+annotator_agreement: 0.7508
+full_dataset_annotator_agreement: 0.3073
+prompts: barrie2024replication,OrnsteinBlasingameTruscott2025

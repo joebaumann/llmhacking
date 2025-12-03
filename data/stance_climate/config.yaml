@@ -1,0 +1,17 @@
+dataset_name: stance_climate
+link_to_dataset: https://github.com/yiweiluo/GWStance
+data_type: News article spans
+data_description: |-
+  Opinion spans extracted from global warming news articles, published from Jan. 1, 2000 to April 12, 2020 by various U.S. news sources.
+data_and_task_name: stance_climate
+task_description: |-
+  Annotate the stance of a sentence in terms of agreeing, disagreeing, or being neutral with respect to the target opinion, "Climate change/-global warming is a serious concern."
+bibtex_identifier: luo-etal-2020-detecting
+prompts: luo-etal-2020-detecting,gligoric-etal-2025-unconfident
+notes: We only include data where at least 5 out of 8 crowdworkers agree on the stance.
+ground_truth_annotators: Amazon Mechanical Turk workers (US-based)
+nr_of_ground_truth_annotators: 398
+nr_of_ground_truth_annotators_per_datapoint: 8
+annotator_agreement: '-'
+full_dataset_annotator_agreement: 0.59
+full_dataset_annotator_agreement_notes: \citet{luo-etal-2020-detecting} report that the average inter-annotator agreement measured as Krippendorff's alpha ranged from 0.54 to 0.64 over the 5 rounds of annotation, we use the average of 0.59.

@@ -1,0 +1,12 @@
+dataset_name: ideology_news
+link_to_dataset: https://github.com/ramybaly/Article-Bias-Prediction
+data_type: News articles
+data_description: |-
+  A set of articles from media sources covering the United States of America. Data was scraped from \url{https://www.allsides.com/}.
+# and spans more than 30K articles published by 73 news media and covering 109 topics.
+data_and_task_name: ideology_news
+task_description: |-
+  Labelling news articles according to Left, Right, and Centrist political bias. This task provides an entire news article as context.
+bibtex_identifier: baly-etal-2020-detect
+prompts: gligoric-etal-2025-unconfident,ziems-etal-2024-large
+ground_truth_annotators: Ratings provided by AllSides.

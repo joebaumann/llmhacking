@@ -1,0 +1,17 @@
+dataset_name: hatespeech
+link_to_dataset: https://www.dropbox.com/s/24meryhqi1oo0xk/implicit-hate-corpus.zip?dl=0
+data_type: Tweets
+data_description: |-
+  Filtered set of tweets, retweets, and replies from most prominent U.S hate groups between January 1, 2015 and December 31, 2017.
+data_and_task_name: hatespeech_explicit
+task_description: |-
+  Classify tweets as explicit hate speech, implicit hate speech, or not hate speech based on whether they attack people based on protected characteristics.
+bibtex_identifier: elsherief-etal-2021-latent
+prompts: elsherief-etal-2021-latent
+ground_truth_annotators: Amazon Mechanical Turk annotators
+nr_of_ground_truth_annotators: 118
+nr_of_ground_truth_annotators_per_datapoint: 3
+full_dataset_annotator_agreement: 0.3084
+full_dataset_annotator_agreement_estimated: True
+full_dataset_annotator_agreement_notes: |-
+ \citet{elsherief-etal-2021-latent} reported majority agreement for 95.3% of tweets, with perfect agreement on 45.6% of the data. Since the individual annotations were not available in the released dataset, we estimated Krippendorff's alpha as follows. We generated 10,000 synthetic annotation matrices where each tweet received 3 annotations following the reported agreement patterns: 45.6% perfect agreement (all annotators agree), 49.7% majority agreement (2 out of 3 agree), and 4.7% no majority (all disagree). Labels were sampled according to the observed distribution in the full dataset. This simulation yielded an estimated Krippendorff's alpha of 0.3084.

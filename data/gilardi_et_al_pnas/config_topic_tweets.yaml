@@ -1,0 +1,15 @@
+dataset_name: tweets
+link_to_dataset: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PQYF6M
+data_type: Tweets
+data_description: |-
+  A random sample of 2,382 tweets drawn from a dataset of 2.6 million tweets on content moderation posted from January 2020 to April 2021.
+data_and_task_name: topic_tweets
+task_description: |-
+  Topic detection: whether a tweet is about a set of six predefined topics (i.e., Section 230, Trump Ban, Complaint, Platform Policies, Twitter Support, and others).
+bibtex_identifier: gilardi2023pnas
+notes: \citet{gilardi2023pnas} refer to this as the 'Topics' task for the 'Tweets (2020--2021)' dataset. We employ identical data preprocessing as \citet{gilardi2023pnas}, which means that we consider only tweets for which all annotators agree on the ground truth label and that are relevant according to the 'relevance_tweets' task. Additionally, we filter out duplicates.
+ground_truth_annotators: Trained research assistants (political science students)
+prompts: gilardi2023pnas,alizadeh2025open
+nr_of_ground_truth_annotators: 2
+nr_of_ground_truth_annotators_per_datapoint: 2
+full_dataset_annotator_agreement: 0.6992

@@ -1,0 +1,18 @@
+dataset_name: issue_survey
+link_to_dataset: https://www.britishelectionstudy.com/data-object/british-election-study-combined-wave-1-26-internet-panel-open-ended-response-data/,https://www.britishelectionstudy.com/data-object/british-election-study-combined-wave-1-29-internet-panel/
+data_type: Open ended survey responses
+data_description: |-
+  The British Election Study (BES) dataset contains responses from 118,597 respondents to survey questions from 29 Internet Panel waves, conducted between February 2014 and July 2024.
+data_and_task_name: issue_survey
+task_description: |-
+  In each wave of the British Election Study Internet Panel, respondents are asked the following question, with the option to provide an open text response: "As far as you're concerned, what is the SINGLE MOST important issue facing the country at the present time?".
+  The task is to classify the response to this most important issue (MII) question into one of 49 categories.
+bibtex_identifier: fieldhouse2024british
+notes: The open text responses to the MII question from wave 26 onwards of the BES were coded using GPT-4o and not by BES research associates~\citep{fieldhouse2024british}. Therefore, following the study of~\citet{Mellon2024Issue}, we only consider waves 1-25, which were coded by human experts, in our experiments. We also exclude trivial samples where the open text response is equivalent to the coded category. We also exlude MII ground truth code 46, which is used for responses that cannot be coded as they are unintelligible, are excessively vague as to what aspect of politics they are getting at (e.g., "So many issues, not sure where to start", "attitudes", "our future"), do not relate to politics or society in any meaningful way or when it is impossible to choose between multiple possible codes.
+prompts: Mellon2024Issue
+ground_truth_annotators: Expert annotators (British election study research associates)
+nr_of_ground_truth_annotators_per_datapoint: 1-2
+full_dataset_annotator_agreement: 0.8425
+full_dataset_annotator_agreement_estimated: True
+full_dataset_annotator_agreement_notes: |-
+  \citet{Mellon2024Issue} reported an annotator agreement of 86.6%, measured on 1,000 randomly sampled open-text responses annotated by two trained experts. Since the individual expert annotations were not available in the released dataset, we estimated Krippendorff's alpha as follows. We generated 10,000 synthetic annotation pairs with 86.6% agreement by sampling from the observed label distribution in the full dataset and randomly flipping 13.4% of labels to alternative classes to match the reported disagreement rate. This simulation yielded an estimated Krippendorff's alpha of 0.8425.

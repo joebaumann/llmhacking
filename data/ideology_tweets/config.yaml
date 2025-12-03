@@ -1,0 +1,15 @@
+dataset_name: ideology_tweets
+link_to_dataset: https://github.com/cssmodels/llm/tree/main/Data/countries
+data_type: Tweets
+data_description: |-
+  Tweets made by politicians before elections.
+data_and_task_name: ideology_tweets
+task_description: |-
+  Classify tweet author's party affiliation from tweet content.
+dataset_sampling_explanation: We used all data.
+bibtex_identifier: Törnberg2024Large
+prompts: Törnberg2024Large
+notes: We use the genderizeR package to predict gender from first names of tweet authors~\citep{genderizeR}.
+ground_truth_annotators: Ground truth values correspond to the actual political party affiliation of the tweet's author.
+# full_dataset_annotator_agreement: 0.6483 # omitting, because we do not use expert annotations but rather the actual ground truth.
+# full_dataset_annotator_agreement_notes: Krippendorf's Alpha is computed based on the annotations of three researchers with PhDs in political science or related disciplines who classified 500 tweets. # omitting, because we do not use expert annotations but rather the actual ground truth.

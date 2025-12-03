@@ -1,0 +1,15 @@
+dataset_name: hatespeech
+link_to_dataset: https://www.dropbox.com/s/24meryhqi1oo0xk/implicit-hate-corpus.zip?dl=0
+data_type: Tweets
+data_description: |-
+  Filtered set of tweets, retweets, and replies from most prominent U.S hate groups between January 1, 2015 and December 31, 2017.
+data_and_task_name: hatespeech_target
+task_description: |-
+  Identify the target group of implicit hate tweets from 26 possible demographic and political groups.
+  This task is only done on a subset of the dataset, considers tweets that have been categorized as ``implicit hate speech'' in a prior annotation stage (hatespeech_explicit task).
+bibtex_identifier: elsherief-etal-2021-latent
+prompts: elsherief-etal-2021-latent
+notes: We consider only the most frequent 26 targets an annotation classes, which reduces the dataset size from 6358 to 5475.
+ground_truth_annotators: Expert annotators (trained research assistants)
+nr_of_ground_truth_annotators: 3
+nr_of_ground_truth_annotators_per_datapoint: 2

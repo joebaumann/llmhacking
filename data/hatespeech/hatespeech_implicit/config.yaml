@@ -1,0 +1,16 @@
+dataset_name: hatespeech
+link_to_dataset: https://www.dropbox.com/s/24meryhqi1oo0xk/implicit-hate-corpus.zip?dl=0
+data_type: Tweets
+data_description: |-
+  Filtered set of tweets, retweets, and replies from most prominent U.S hate groups between January 1, 2015 and December 31, 2017.
+data_and_task_name: hatespeech_implicit
+task_description: |-
+  Categorize implicit hate tweets into six specific types: white grievance, incitement, inferiority, irony, stereotypical, or threatening.
+  This task is only done on a subset of the dataset, considers tweets that have been categorized as ``implicit hate speech'' in a prior annotation stage (hatespeech_explicit task).
+bibtex_identifier: elsherief-etal-2021-latent
+prompts: elsherief-etal-2021-latent,ziems-etal-2024-large
+notes: We only consider the six implicit hate speech categories and omit tweets annotated with the 'other' class (less than 2% of the dataset).
+ground_truth_annotators: Expert annotators (trained research assistants)
+nr_of_ground_truth_annotators: 3
+nr_of_ground_truth_annotators_per_datapoint: 1-3
+full_dataset_annotator_agreement_notes: \citet{elsherief-etal-2021-latent} reported Fleiss' Kappa of 0.61 and 0.55 for two samples of 150 tweets. Since the individual annotations were not available in the released dataset, we cannot estimate Krippendorff's alpha.

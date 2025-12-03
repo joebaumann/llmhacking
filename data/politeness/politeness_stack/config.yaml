@@ -1,0 +1,18 @@
+dataset_name: politeness_stack
+link_to_dataset: http://www.cs.cornell.edu/~cristian/Politeness_files/Stanford_politeness_corpus.zip
+data_type: StackExchange requests
+data_description: |-
+  Requests from the StackExchange question-answering communities. These are often users commenting on existing posts requesting further information or proposing edits.
+data_and_task_name: politeness_stack
+task_description: |-
+  Indicate perceived politeness of a StackExchange request.
+bibtex_identifier: danescu-niculescu-mizil-etal-2013-computational
+prompts: gligoric-etal-2025-unconfident,ziems-etal-2024-large
+notes: Following~\citet{gligoric-etal-2025-unconfident}, we consider perceived politeness as a binary classification task and omit the neutral class. This reduces the number of datapoints from 6594 to 3298.
+ground_truth_annotators: Amazon Mechanical Turk workers (US-based)
+nr_of_ground_truth_annotators: 212
+nr_of_ground_truth_annotators_per_datapoint: 5
+annotator_agreement: 0.2574
+full_dataset_annotator_agreement: 0.1620
+full_dataset_annotator_agreement_notes: |-
+ Krippendorff's alpha was calculated on the ternary classification task (polite/neutral/impolite) using all 5 annotators' scores.

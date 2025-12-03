@@ -1,0 +1,11 @@
+dataset_name: topic
+link_to_dataset: https://osf.io/gjt87/files/osfstorage
+data_type: Congressional bills
+data_description: |- 
+  A balanced random sample of congressional bills. They are relating to economy (5k), or three other topics (5k).
+data_and_task_name: topic
+task_description: |-
+  Binary topic classification, more precisely, identify whether a congressional bill is relating to the economy or not.
+notes: We only use the random sample of 10K provided by the authors, consisting of one balanced random sample from the full data that they use in the paper (5k texts about economy, 5k about 3 other topics). The full dataset contains 400k bills as is available at \url{https://comparativeagendas.s3.amazonaws.com/datasetfiles/US-Legislative-congressional_bills_19.3_3_2.csv}.
+bibtex_identifier: egami2023using
+ground_truth_annotators: Trained human annotators
