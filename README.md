@@ -43,7 +43,8 @@ conda activate llmhacking
 conda install -c conda-forge rpy2
 
 # Install R packages
-R --no-save -e "install.packages('devtools')"
+# Note: libgit2 must be installed for the R devtools installation. on macOS, you can install it with: brew install libgit2 pkg-config
+R --no-save -e "install.packages('devtools', repos='https://cloud.r-project.org')"
 R --no-save -e "library(devtools); install_github('naoki-egami/dsl', dependencies = TRUE)"
 
 # Install Python dependencies
@@ -169,7 +170,7 @@ for result in conclusions:
     print(f"Class: {result['class_name']}")
     print(f"Conclusion: {result['conclusion']}")
     print(f"P-value: {result['p_value']:.4f}")
-    print(f"Effect size: {result['effect_size']:.4f}")
+    print(f"Effect size: {result['effect_size']:.4f}\n--")
 ```
 
 ## Full Evaluation Pipeline
