@@ -3,3 +3,4 @@ data_raw
 .Rhistory
 __pycache__/
 .env
+data/all_data_processed/*REDACTED.csv
