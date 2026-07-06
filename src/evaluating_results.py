@@ -1039,6 +1039,14 @@ def compare_downstream_analysis_with_ground_truth(ground_truth_downstream_analys
     
     results = []
     for _, row in merged.iterrows():
+        # For DSL/CDI, take the effect direction from the corrected test statistic
+        # (test_statistic_llm) rather than the raw LLM proportions. Only the direction of a
+        # significant conclusion is affected.
+        est = str(row.get('stat_test_name_llm', ''))
+        if (('dsl' in est or 'cdi' in est)
+                and row.get('conclusion_llm') in ('group1_larger', 'group2_larger')
+                and pd.notna(row.get('test_statistic_llm'))):
+            row['conclusion_llm'] = 'group1_larger' if row['test_statistic_llm'] > 0 else 'group2_larger'
         # result = {col: row[col] for col in match_cols}
         result = row.to_dict()
         result['llm_hacking'] = assess_llm_hacking(row)

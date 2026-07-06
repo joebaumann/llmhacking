@@ -93,15 +93,20 @@ def run_log_regressions(group1_df_or_dict, group2_df_or_dict, gt_classes, using_
                 print(f'{estimator_correction_method} estimation failed! continuing with next class')
                 continue
             elif p_value < significance_threshold:
-                if group_1_proportion > group_2_proportion:
+                # Effect direction is taken from the (bias-corrected) test statistic, not from
+                # the raw LLM proportions. For DSL/CDI the corrected estimate can point the
+                # opposite way to the naive response_mapped proportions, and it is the corrected
+                # sign that is valid. All estimators share the convention z_stat > 0 <=> group1
+                # larger, so this is identical to comparing proportions for the uncorrected tests.
+                if z_stat > 0:
                     conclusion = "group1_larger"
                 else:
                     conclusion = "group2_larger"
             else:
                 conclusion = "no_difference"
-            
+
             effect_size = group_proportion_difference
-        
+
         conclusions.append({
             # dict keys required by all statistical tests
             'conclusion': conclusion,
